@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="/static/css/predicstyle.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Prediction Result</h2>
+        {% if prediction == "Heart Failure" %}
+            <p style="color: yellow;">You have a heart disease! Please concern to your nearest hospital as soon as possible.</p>
+        {% else %}
+            <p style="color: yellow;">Congratulations! You don't have a heart disease.</p>
+        {% endif %}
+        <p><a href="/prediction_form">Go back to prediction form</a></p>
+    </div>
+</body>
+</html>
